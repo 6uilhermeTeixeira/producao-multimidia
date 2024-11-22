@@ -1,0 +1,245 @@
+body {
+    background-image: url('/imgs/background.gif');
+    background-size: 140%;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    font-family: 'Rakkas', sans-serif;
+    font-size: 140%;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    padding: 5px 10px; /* Adiciona espaço ao redor do texto */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Cor ao passar o mouse */
+}
+
+nav ul li a.active {
+    background-color: #777; /* Cor ao clicar */
+    color: white; /* Cor do texto ao clicar */
+}
+
+main {
+    padding: 20px;
+    font-family: 'Rakkas', sans-serif;
+    font-size: large;
+}
+
+section {
+    background-color: rgba(60, 60, 60, 0.95);
+    padding: 2%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#apresentacao {
+    margin-top: -6%;
+}
+
+#apresentacao img {
+    margin-top: 5%;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    width: 30%;
+    height: auto;
+}
+
+#apresentacao h1 {
+    margin: 5%;
+    font-size: 400%;
+}
+
+#apresentacao p {
+    font-size: 150%;
+}
+
+#musica h1 {
+    margin-top: 3%;
+}
+
+#musica p {
+    Margin: 0px 0px 30px 0px;
+}
+
+#musica audio {
+    Margin: 0px 0px 30px 0px;
+}
+
+#design h1 {
+    margin: 3%;
+}
+
+#design h2 {
+    margin: 3%;
+}
+
+#design h3 {
+    margin: 3%;
+}
+
+#video h1 {
+    margin: 3%;
+}
+
+#web p {
+    margin: 3% 0% 3% 0%;
+}
+
+#web h1 {
+    margin: 3%;
+}
+
+#web h2 {
+    margin: 2% 0% 3% 0%;
+}
+
+#web a {
+    font-size: 160%;
+    color: green;
+}
+
+#contato a {
+    font-size: 200%;
+    color: green;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 40px; /* Tamanho do ícone */
+    color: white; /* Cor dos ícones */
+    margin: 0 15px; /* Espaçamento entre os ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+}
+
+.carousel-inner {
+    min-height: 500px; /* Use min-height em vez de height */
+    overflow: hidden; /* Garante que nada saia do contêiner */
+}
+
+.carousel-item img {
+    padding: 0% 15% 0% 15%;
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+    max-height: 100%; /* Limita a altura máxima da imagem ao contêiner */
+    object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortar */
+    object-position: center; /* Centraliza a imagem dentro do contêiner */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    filter: invert(1); /* Inverte a cor do ícone para branco (se necessário) */
+}
+
+
+
+/* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+    #apresentacao img {
+        width: 50%; /* Aumenta a largura da imagem em telas menores */
+    }
+
+    #apresentacao h1 {
+        font-size: 300%; /* Reduz o tamanho da fonte do título */
+    }
+
+    #apresentacao p {
+        font-size: 120%; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    .carousel-inner {
+        min-height: 300px; /* Ajuste a altura mínima para dispositivos móveis */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul li {
+        margin-right: 15px; /* Reduz o espaço entre os itens do menu */
+    }
+
+    #apresentacao img {
+        width: 70%; /* Aumenta a largura da imagem em telas menores */
+    }
+
+    #apresentacao h1 {
+        font-size: 250%; /* Reduz ainda mais o tamanho da fonte do título */
+    }
+
+    .carousel-inner {
+        min-height: 240px; /* Ajuste a altura mínima para dispositivos móveis */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Muda a direção do menu para coluna */
+        align-items: center
+    }
+    .carousel-inner {
+        min-height: 180px; /* Ajuste a altura mínima para dispositivos móveis */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
+    }
+}
