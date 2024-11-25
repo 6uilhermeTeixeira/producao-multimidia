@@ -53,7 +53,7 @@ main {
 }
 
 section {
-    background-color: rgba(60, 60, 60, 0.95);
+    background-color: rgba(60, 60, 60, 0.90);
     padding: 2%;
     margin-bottom: 10px;
     color: white;
@@ -90,6 +90,10 @@ footer {
     font-size: 150%;
 }
 
+#apresentacao #redes {
+    background-color: rgba(40, 40, 40, 0.8);
+}
+
 #musica h1 {
     margin-top: 3%;
 }
@@ -98,8 +102,10 @@ footer {
     Margin: 0px 0px 30px 0px;
 }
 
-#musica audio {
-    Margin: 0px 0px 30px 0px;
+#design .imagens {
+    background-color: rgba(40, 40, 40, 0.8);
+    padding: 2% 2% 2% 2%;
+    margin-bottom: 2%;
 }
 
 #design h1 {
@@ -107,15 +113,21 @@ footer {
 }
 
 #design h2 {
-    margin: 3%;
+    margin: 5% 0% 3% 0%;
 }
 
 #design h3 {
-    margin: 3%;
+    margin-top: 2%;
 }
 
 #video h1 {
     margin: 3%;
+}
+
+#web .projetoWeb {
+    background-color: rgba(40, 40, 40, 0.8);
+    padding: 2%;
+    margin-bottom: 2%;
 }
 
 #web p {
@@ -140,6 +152,7 @@ footer {
     color: green;
 }
 
+/* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
 .social-icons {
     margin-top: 20px;
 }
@@ -153,19 +166,154 @@ footer {
 }
 
 .social-icon:hover {
+    color: aqua;
     transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
 }
 
+#web .w3-container .social-icons {
+    margin-top: 20px;
+}
+
+#web .w3-container .social-icon {
+    font-size: 40px; /* Tamanho do ícone */
+    color: white; /* Cor dos ícones */
+    margin: 0 15px; /* Espaçamento entre os ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+#web .w3-container .social-icon:hover {
+    color: aqua;
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+}
+/* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
+
+/* Configurações dos Music Players *//* Configurações dos Music Players *//* Configurações dos Music Players */
+.player {
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adiciona espaço interno */
+    margin: 20px; /* Adiciona margem entre os players */
+    border-radius: 10px; /* Arredonda os cantos do player */
+    background-color: rgba(40, 40, 40, 0.8); /* Fundo semi-transparente */
+}
+  
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+  
+.track-art {
+    margin: 25px;
+    height: 200px; /* Ajusta a altura para melhor responsividade */
+    width: 200px; /* Ajusta a largura para melhor responsividade */
+    background-size: cover;
+    border-radius: 10%;
+}
+  
+.now-playing {
+    font-size: 1rem;
+}
+  
+.track-name {
+    font-size: 3rem;
+}
+  
+.track-artist {
+    font-size: 1.5rem;
+}
+  
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centraliza os botões */
+    flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte em telas menores */
+}
+  
+.playpause-track, .prev-track, .next-track {
+    padding: 15px; /* Reduz o padding para melhor ajuste em telas menores */
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+  
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+    opacity: 1.0;
+}
+  
+.slider_container {
+    width: 100%; /* Permite que o slider ocupe toda a largura disponível */
+    max-width: 400px; /* Limita a largura máxima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; /* Adiciona margem vertical */
+}
+  
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+  
+.seek_slider:hover, .volume_slider:hover {
+    opacity: 1.0;
+}
+  
+.seek_slider {
+    width: 60%;
+}
+  
+.volume_slider {
+    width: 30%;
+}
+  
+.current-time, .total-duration {
+    padding: 10px;
+}
+  
+i.fa-volume-down, i.fa-volume-up {
+    padding: 10px;
+}
+  
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+    cursor: pointer;
+}
+/* Configurações dos Music Players *//* Configurações dos Music Players *//* Configurações dos Music Players */
+
+/* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
 .carousel-inner {
-    min-height: 500px; /* Use min-height em vez de height */
+    min-height: 300px; /* Ajuste a altura mínima para dispositivos móveis */
     overflow: hidden; /* Garante que nada saia do contêiner */
 }
 
 .carousel-item img {
-    padding: 0% 15% 0% 15%;
     width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
     height: auto; /* Ajusta a altura automaticamente para manter a proporção */
-    max-height: 100%; /* Limita a altura máxima da imagem ao contêiner */
     object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortar */
     object-position: center; /* Centraliza a imagem dentro do contêiner */
 }
@@ -176,10 +324,9 @@ footer {
     border: none; /* Remove a borda */
     filter: invert(1); /* Inverte a cor do ícone para branco (se necessário) */
 }
+/* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
 
-
-
-/* Media Queries para Responsividade */
+/* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
 @media (max-width: 1200px) {
     #apresentacao img {
         width: 50%; /* Aumenta a largura da imagem em telas menores */
@@ -194,12 +341,11 @@ footer {
     }
 
     .carousel-inner {
-        min-height: 300px; /* Ajuste a altura mínima para dispositivos móveis */
+        min-height: 250px; /* Ajuste a altura mínima para dispositivos móveis */
     }
 
     .carousel-item img {
-        width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        padding: 0; /* Remove padding em telas menores */
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
 }
@@ -218,12 +364,11 @@ footer {
     }
 
     .carousel-inner {
-        min-height: 240px; /* Ajuste a altura mínima para dispositivos móveis */
+        min-height: 200px; /* Ajuste a altura mínima para dispositivos móveis */
     }
 
     .carousel-item img {
-        width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        padding: 0; /* Remove padding em telas menores */
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
 }
@@ -233,13 +378,38 @@ footer {
         flex-direction: column; /* Muda a direção do menu para coluna */
         align-items: center
     }
+
+    .player {
+        width: 90%; /* O player ocupa 90% da largura da tela em dispositivos menores */
+        margin: 10px auto; /* Centraliza o player */
+    }
+
     .carousel-inner {
-        min-height: 180px; /* Ajuste a altura mínima para dispositivos móveis */
+        min-height: 150px; /* Ajuste a altura mínima para dispositivos móveis */
     }
 
     .carousel-item img {
-        width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        padding: 0; /* Remove padding em telas menores */
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
 }
+
+@media (max-width: 480px) {
+    .track-name {
+        font-size: 2rem; /* Reduz o tamanho do nome da faixa */
+    }
+
+    .track-artist {
+        font-size: 1.2rem; /* Reduz o tamanho do artista */
+    }
+
+    .carousel-inner {
+        min-height: 120px; /* Ajuste a altura mínima para dispositivos móveis */
+    }
+
+    .carousel-item img {
+        padding: 0; /* Remove padding em telas menores */
+        object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
+    }
+}
+/* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */

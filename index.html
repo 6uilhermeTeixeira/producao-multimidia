@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="/musicPlayer/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
@@ -47,11 +49,17 @@
             <section id="redes" class="text-center">
                 <h2>Seguir Prod. G3X</h2>
                 <div class="social-icons">
-                    <a href="https://www.youtube.com/@prod.G3X/" target="_blank" class="social-icon" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
+                    <a href="https://6uilhermeteixeira.github.io/producaoMultimidia/" target="_blank" target="_blank" class="social-icon" aria-label="Website">
+                        <i class="fas fa-globe"></i>
                     </a>
                     <a href="https://www.instagram.com/prod.g3x" target="_blank" class="social-icon" aria-label="Instagram">
                         <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@prod.G3X/" target="_blank" class="social-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://github.com/6uilhermeTeixeira" target="_blank" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
                     </a>
                 </div>
             </section>
@@ -64,138 +72,56 @@
             <h4>Guias</h4>
             <p>Nesta sessão estão alguns projetos dos quais realizei a captação de voz, mixagem e masterização de som, em alguns casos também criando melodia e batida.</p>
 
-            <h6>Aleluia - L Lima (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/guias/Aleluia - L Lima.wav" type="audio/mpeg">
-            </audio>
-
-            <h6> Dia Tranquilo - Viih Rodrigues (Prod. G3X)</h6>
-            <audio controls>
-                <source src="/musicas/guias/Dia Tranquilo - Viih Rodrigues.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Entre Becos e Vielas - Viih Rodrigues</h6>
-            <audio controls>
-                <source src="/musicas/guias/Entre Becos e Vielas - Viih Rodrigues.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Fica - Keren, Guh, Jade Chris</h6>
-            <audio controls>
-                <source src="/musicas/guias/Fica - Keren, Guh, Jade Chris.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Gang do Assalto - Dioin FG</h6>
-            <audio controls>
-                <source src="/musicas/guias/Gang do Assalto - Dioin FG.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Não se Justifica - Jeff</h6>
-            <audio controls>
-                <source src="/musicas/guias/Não se Justifica - Jeff.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Nua - Keren Chris Feat Fael Andrade</h6>
-            <audio controls>
-                <source src="/musicas/guias/Nua - Keren Chris Feat Fael Andrade.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Omlad - La Cintura</h6>
-            <audio controls>
-                <source src="/musicas/guias/Omlad - La Cintura.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Rebola pra mim - Gringa Cara Feat Keren Chris</h6>
-            <audio controls>
-                <source src="/musicas/guias/Rebola pra mim - Gringa Cara Feat Keren Chris.wav" type="audio/mpeg">
-            </audio>
+            <div class="player" id="player1">
+                <div class="details">
+                  <div class="now-playing">PLAYING x OF y</div>
+                  <div class="track-art"></div>
+                  <div class="track-name">Track Name</div>
+                  <div class="track-artist">Track Artist</div>
+                </div>
+                <div class="buttons">
+                    <div class="prev-track" onclick="player1_prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+                    <div class="playpause-track" onclick="player1_playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+                    <div class="next-track" onclick="player1_nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+                </div>
+                <div class="slider_container">
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo('player1')">
+                  <div class="total-duration">00:00</div>
+                </div>
+                <div class="slider_container">
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume('player1')">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+              </div>
 
             <h4>Beats</h4>
             <p>Nesta sessão estão alguns beats criados a partir de samples e alguns criados do zero, incluindo batida e melodia.</p>
 
-            <h6>Chicano - Latin Trap Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Chicano - Latin Trap Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Double Blunt - Plug Trap Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Double Blunt - Plug Trap Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Criminal - Trap Funk Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Criminal - Trap Funk Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Playboy - Vibes Trap Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Playboy - Vibes Trap Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>9 mm - Hard Trap Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/9 mm - Hard Trap Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Chefe - Funk Consciente Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Chefe - Funk Consciente Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Di Quebra - Funk Consciente Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Di Quebra - Funk Consciente Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Momentos - Funk Consciente Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Momentos - Funk Consciente Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Double G - G Funk Boom Bap Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Double G - G Funk Boom Bap Beat.wav" type="audio/mpeg">
-            </audio>
-            
-            <h6>Goofy - Underground Boom Bap Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Goofy - Underground Boom Bap Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Smoke - Jazz Boom Bap Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Smoke - Jazz Boom Bap Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>California - Jersey Club Grimme Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/California - Jersey Club Grimme Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Legacy - Drill Grimme Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Legacy - Drill Grimme Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Arriba - Afrobeat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Arriba - Afrobeat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Mamacita - Raggaeton Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Mamacita - Raggaeton Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Morning Sun -  RnB Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Morning Sun -  RnB Beat.wav" type="audio/mpeg">
-            </audio>
-
-            <h6>Pecado - RnB Beat (Prod.G3X)</h6>
-            <audio controls>
-                <source src="/musicas/beats/Pecado - RnB Beat.wav" type="audio/mpeg">
-            </audio>
+            <div class="player" id="player2">
+                <div class="details">
+                  <div class="now-playing">PLAYING x OF y</div>
+                  <div class="track-art"></div>
+                  <div class="track-name">Track Name</div>
+                  <div class="track-artist">Track Artist</div>
+                </div>
+                <div class="buttons">
+                    <div class="prev-track" onclick="player2_prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+                    <div class="playpause-track" onclick="player2_playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+                    <div class="next-track" onclick="player2_nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+                </div>
+                <div class="slider_container">
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo('player2')">
+                  <div class="total-duration">00:00</div>
+                </div>
+                <div class="slider_container">
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume('player2')">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+            </div>
 
         </section>
 
@@ -205,407 +131,429 @@
         
             <h2>Logotipos</h2>
 
-            <h4>Renan Alexandre</h4>
-            <p>Logotipo minimalista e assinatura pronta para documentos desenvolvido para projeto de marca pessoal.</p>
-            <div id="carouselRenanAlexandre" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/logos/RenanAlexandre1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>Renan Alexandre</h3>
+                <p>Logotipo minimalista e assinatura pronta para documentos desenvolvido para projeto de marca pessoal.</p>
+                <div id="carouselRenanAlexandre" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/logos/RenanAlexandre1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/RenanAlexandre2.png" class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/RenanAlexandre3.png" class="d-block w-100" alt="Design 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/RenanAlexandre4.png" class="d-block w-100" alt="Design 4">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/RenanAlexandre2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/RenanAlexandre3.png" class="d-block w-100" alt="Design 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/RenanAlexandre4.png" class="d-block w-100" alt="Design 4">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselRenanAlexandre" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
             </div>
         
-            <h4>FG Gang</h4>
-            <p>Logotipo desenvolvido para grupo de Rap.</p>
-            <div id="carouselFGGang" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/logos/FGGang1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>FG Gang</h3>
+                <p>Logotipo desenvolvido para grupo de Rap.</p>
+                <div id="carouselFGGang" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/logos/FGGang1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/FGGang2.png" class="d-block w-100" alt="Design 2">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/FGGang2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFGGang" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselFGGang" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselFGGang" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselFGGang" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFGGang" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselFGGang" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselFGGang" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselFGGang" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
             </div>
 
-            <h4>GT Shops</h4>
-            <p>Logotipo desenvolvido para projeto de loja generalista na modalidade Dropshipping.</p>
-            <div id="carouselGTShops" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/logos/Gtshops1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>GT Shops</h3>
+                <p>Logotipo desenvolvido para projeto de loja generalista na modalidade Dropshipping.</p>
+                <div id="carouselGTShops" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/logos/Gtshops1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/Gtshops2.png" class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/Gtshops3.png" class="d-block w-100" alt="Design 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/Gtshops4.png" class="d-block w-100" alt="Design 4">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/Gtshops2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGTShops" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGTShops" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselGTShops" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselGTShops" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselGTShops" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselGTShops" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/Gtshops3.png" class="d-block w-100" alt="Design 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/Gtshops4.png" class="d-block w-100" alt="Design 4">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselGTShops" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselGTShops" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselGTShops" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselGTShops" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselGTShops" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselGTShops" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
             </div>
 
-            <h4>Heisen Mob</h4>
-            <p>Logotipo minimalista desenvolvido para grupo de Rap.</p>
-            <div id="carouselHeisenMob" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/logos/HeisenMob1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>Heisen Mob</h3>
+                <p>Logotipo minimalista desenvolvido para grupo de Rap.</p>
+                <div id="carouselHeisenMob" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/logos/HeisenMob1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/HeisenMob2.png" class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/HeisenMob3.png" class="d-block w-100" alt="Design 3">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/HeisenMob2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeisenMob" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHeisenMob" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselHeisenMob" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselHeisenMob" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselHeisenMob" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/HeisenMob3.png" class="d-block w-100" alt="Design 3">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeisenMob" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselHeisenMob" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselHeisenMob" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselHeisenMob" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselHeisenMob" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
             </div>
 
-            <h4>Venuzzi</h4>
-            <p>Logotipo minimalista desenvolvido para marca de semi-jóias</p>
-            <div id="carouselVenuzzi" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/logos/VENUZZI1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>Venuzzi</h3>
+                <p>Logotipo minimalista desenvolvido para marca de semi-jóias</p>
+                <div id="carouselVenuzzi" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/logos/VENUZZI1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/VENUZZI2.png" class="d-block w-100" alt="Design 2">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/VENUZZI2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselVenuzzi" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselVenuzzi" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselVenuzzi" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselVenuzzi" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselVenuzzi" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselVenuzzi" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselVenuzzi" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselVenuzzi" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 </div>
             </div>
 
-            <h4>Bichos Store</h4>
-            <p>Logotipo desenvolvido para projeto de loja de produtos para pets na modalidade Dropshipping.</p>
-            <div id="carouselDesign" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/logos/BichosStore1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>Bichos Store</h3>
+                <p>Logotipo desenvolvido para projeto de loja de produtos para pets na modalidade Dropshipping.</p>
+                <div id="carouselDesign" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/logos/BichosStore1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/BichosStore2.png" class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/BichosStore3.png" class="d-block w-100" alt="Design 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/BichosStore4.png" class="d-block w-100" alt="Design 4">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/BichosStore2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesign" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDesign" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselDesign" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselDesign" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselDesign" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselDesign" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/BichosStore3.png" class="d-block w-100" alt="Design 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/BichosStore4.png" class="d-block w-100" alt="Design 4">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesign" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselDesign" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselDesign" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselDesign" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselDesign" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselDesign" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
             </div>
 
-            <h4>Outros</h4>
-            <p>Logotipo diversos</p>
-            <div id="carouselOutros" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/logos/Outros1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>Outros</h3>
+                <p>Logotipo diversos</p>
+                <div id="carouselOutros" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/logos/Outros1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/Outros2.png" class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/Outros3.png" class="d-block w-100" alt="Design 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/Outros4.png" class="d-block w-100" alt="Design 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/logos/Outros5.png" class="d-block w-100" alt="Design 5">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/Outros2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOutros" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOutros" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/Outros3.png" class="d-block w-100" alt="Design 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/Outros4.png" class="d-block w-100" alt="Design 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/logos/Outros5.png" class="d-block w-100" alt="Design 5">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselOutros" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselOutros" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
             </div>
 
-            <h2>Capas</h2>
-            <p>Capas criadas para lançamentos musicais de albuns e singles.</p>
-            <div id="carouselCapasMusicais" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/capasMusica/capa1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h2>Capas</h2>
+                <p>Capas criadas para lançamentos musicais de albuns e singles.</p>
+                <div id="carouselCapasMusicais" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/capasMusica/capa1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/capasMusica/capa2.png" class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/capasMusica/capa3.png" class="d-block w-100" alt="Design 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/capasMusica/capa4.png" class="d-block w-100" alt="Design 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/capasMusica/capa5.png" class="d-block w-100" alt="Design 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/capasMusica/capa6.png" class="d-block w-100" alt="Design 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/capasMusica/capa7.png" class="d-block w-100" alt="Design 7">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/capasMusica/capa8.png" class="d-block w-100" alt="Design 8">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/capasMusica/capa9.png" class="d-block w-100" alt="Design 9">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/capasMusica/capa2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="8" aria-label="Slide 9"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/capasMusica/capa3.png" class="d-block w-100" alt="Design 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/capasMusica/capa4.png" class="d-block w-100" alt="Design 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/capasMusica/capa5.png" class="d-block w-100" alt="Design 5">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/capasMusica/capa6.png" class="d-block w-100" alt="Design 6">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/capasMusica/capa7.png" class="d-block w-100" alt="Design 7">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/capasMusica/capa8.png" class="d-block w-100" alt="Design 8">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/capasMusica/capa9.png" class="d-block w-100" alt="Design 9">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                    <button type="button" data-bs-target="#carouselCapasMusicais" data-bs-slide-to="8" aria-label="Slide 9"></button>
                 </div>
             </div>
 
             <h2>Flyers e Banners</h2>
 
-            <h4>Desktop</h4>
-            <p>Banners promocionais para ecommerce dimensionado para desktop.</p>
-            <div id="carouselBannersDesktop" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/flyersBanners/desktop1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>Desktop</h3>
+                <p>Banners promocionais para ecommerce dimensionado para desktop.</p>
+                <div id="carouselBannersDesktop" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/flyersBanners/desktop1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/flyersBanners/desktop2.png" class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/flyersBanners/desktop3.png" class="d-block w-100" alt="Design 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/flyersBanners/desktop4.png" class="d-block w-100" alt="Design 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/flyersBanners/desktop5.png" class="d-block w-100" alt="Design 5">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/flyersBanners/desktop2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/flyersBanners/desktop3.png" class="d-block w-100" alt="Design 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/flyersBanners/desktop4.png" class="d-block w-100" alt="Design 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/flyersBanners/desktop5.png" class="d-block w-100" alt="Design 5">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselBannersDesktop" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
             </div>
 
-            <h4>Mobile</h4>
-            <p>Banners promocionais para ecommerce dimensionado para dispositivos móveis.</p>
-            <div id="carouselBannersMobile" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/flyersBanners/mobile1.png" 
-                            srcset="imgs/GraphicDesign/flyersBanners/mobile1-768.png 768w,
-                                    imgs/GraphicDesign/flyersBanners/mobile1.png 1200w" 
-                            class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h3>Mobile</h3>
+                <p>Banners promocionais para ecommerce dimensionado para dispositivos móveis.</p>
+                <div id="carouselBannersMobile" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/flyersBanners/mobile1.png" 
+                                srcset="imgs/GraphicDesign/flyersBanners/mobile1-768.png 768w,
+                                        imgs/GraphicDesign/flyersBanners/mobile1.png 1200w" 
+                                class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/flyersBanners/mobile2.png" 
+                                srcset="imgs/GraphicDesign/flyersBanners/mobile2-768.png 768w,
+                                        imgs/GraphicDesign/flyersBanners/mobile2.png 1200w" 
+                                class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/flyersBanners/mobile3.png" 
+                                srcset="imgs/GraphicDesign/flyersBanners/mobile3-768.png 768w,
+                                        imgs/GraphicDesign/flyersBanners/mobile3.png 1200w" 
+                                class="d-block w-100" alt="Design 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/flyersBanners/mobile4.png" 
+                                srcset="imgs/GraphicDesign/flyersBanners/mobile4-768.png 768w,
+                                        imgs/GraphicDesign/flyersBanners/mobile4.png 1200w" 
+                                class="d-block w-100" alt="Design 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/flyersBanners/mobile5.png" 
+                                srcset="imgs/GraphicDesign/flyersBanners/mobile5-768.png 768w,
+                                        imgs/GraphicDesign/flyersBanners/mobile5.png 1200w" 
+                                class="d-block w-100" alt="Design 5">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/flyersBanners/mobile2.png" 
-                            srcset="imgs/GraphicDesign/flyersBanners/mobile2-768.png 768w,
-                                    imgs/GraphicDesign/flyersBanners/mobile2.png 1200w" 
-                            class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannersMobile" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselBannersMobile" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/flyersBanners/mobile3.png" 
-                            srcset="imgs/GraphicDesign/flyersBanners/mobile3-768.png 768w,
-                                    imgs/GraphicDesign/flyersBanners/mobile3.png 1200w" 
-                            class="d-block w-100" alt="Design 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/flyersBanners/mobile4.png" 
-                            srcset="imgs/GraphicDesign/flyersBanners/mobile4-768.png 768w,
-                                    imgs/GraphicDesign/flyersBanners/mobile4.png 1200w" 
-                            class="d-block w-100" alt="Design 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/flyersBanners/mobile5.png" 
-                            srcset="imgs/GraphicDesign/flyersBanners/mobile5-768.png 768w,
-                                    imgs/GraphicDesign/flyersBanners/mobile5.png 1200w" 
-                            class="d-block w-100" alt="Design 5">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBannersMobile" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselBannersMobile" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselBannersMobile" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
             </div>
 
-            <h2>Vetorização</h2>
-            <p>Nesta sessão estão algumas artes vetoriais.</p>
-            <div id="carouselvetorizacao" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="imgs/GraphicDesign/vetorizacao/vetorizacao1.png" class="d-block w-100" alt="Design 1">
+            <div class="imagens">
+                <h2>Vetorização</h2>
+                <p>Nesta sessão estão algumas artes vetoriais.</p>
+                <div id="carouselvetorizacao" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imgs/GraphicDesign/vetorizacao/vetorizacao1.png" class="d-block w-100" alt="Design 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/vetorizacao/vetorizacao2.png" class="d-block w-100" alt="Design 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/vetorizacao/vetorizacao3.png" class="d-block w-100" alt="Design 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/vetorizacao/vetorizacao4.png" class="d-block w-100" alt="Design 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/vetorizacao/vetorizacao5.png" class="d-block w-100" alt="Design 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/vetorizacao/vetorizacao6.png" class="d-block w-100" alt="Design 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imgs/GraphicDesign/vetorizacao/vetorizacao7.png" class="d-block w-100" alt="Design 7">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/vetorizacao/vetorizacao2.png" class="d-block w-100" alt="Design 2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselvetorizacao" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselvetorizacao" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="6" aria-label="Slide 7"></button>
                     </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/vetorizacao/vetorizacao3.png" class="d-block w-100" alt="Design 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/vetorizacao/vetorizacao4.png" class="d-block w-100" alt="Design 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/vetorizacao/vetorizacao5.png" class="d-block w-100" alt="Design 5">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/vetorizacao/vetorizacao6.png" class="d-block w-100" alt="Design 6">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="imgs/GraphicDesign/vetorizacao/vetorizacao7.png" class="d-block w-100" alt="Design 7">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselvetorizacao" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselvetorizacao" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselvetorizacao" data-bs-slide-to="6" aria-label="Slide 7"></button>
                 </div>
             </div>
         </section>
@@ -631,56 +579,84 @@
                 </p>
 
             <div class="w3-container w3-card w3-white w3-margin-bottom">
-                <h2 class="w3-text-grey w3-padding-16">
-                    <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projetos
+                <h2>
+                    Projetos
                 </h2>
-                <div class="w3-container">
-                    <h6 class="w3-text-teal">
-                      <i class="fa fa-github fa-fw w3-margin-right"></i>
-                      <a href="https://6uilhermeteixeira.github.io/cv/" target="_blank">Curriculum Vitae</a>
-                    </h6>
-                    <p>Projeto de curriculo online oferecido pela Digital Innovation One.</p>
+                <div class="projetoWeb">
+                      <h3>Números Primos</h3>
+                    <div class="social-icons">
+                        <a href="https://6uilhermeteixeira.github.io/producaoMultimidia/" target="_blank" class="social-icon" aria-label="Website">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <a href="https://github.com/6uilhermeTeixeira/producaoMultimidia" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <p>Desenvolvimento de algoritmo de fatoração que verifica a primalidade de um número individualmente, enquanto o Crivo de Eratóstenes gera uma lista de primos até um determinado limite. O primeiro divide o número por primos, enquanto o segundo marca múltiplos de primos em uma lista.</p>
                     <hr>
                 </div>
-                <div class="w3-container">
-                    <h6 class="w3-text-teal">
-                      <i class="fa fa-github fa-fw w3-margin-right"></i>
-                      <a href="https://github.com/6uilhermeTeixeira/PrimeiraCryptoEthereum" target="_blank">Primeira Crypto Ethereum</a>
-                    </h6>
-                    <p>Cógido Desenvolvido em Solidity para Deploy de Smart Contract.</p>
-                    <hr>
+                <div class="projetoWeb">
+                    <h3>Curriculum Vitae</h3>
+                  <div class="social-icons">
+                      <a href="https://6uilhermeteixeira.github.io/cv/"" target="_blank" class="social-icon" aria-label="Website">
+                          <i class="fas fa-globe"></i>
+                      </a>
+                      <a href="https://github.com/6uilhermeTeixeira/cv" target="_blank" class="social-icon" aria-label="GitHub">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </div>
+                  <p>Projeto de curriculo online oferecido pela Digital Innovation One.</p>
+                  <hr>
                 </div>
-                <div class="w3-container">
-                    <h6 class="w3-text-teal">
-                      <i class="fa fa-github fa-fw w3-margin-right"></i>
-                      <a href="https://github.com/6uilhermeTeixeira/JumpMario" target="_blank">Jump Mario</a>
-                    </h6>
-                    <p>Cógido Desenvolvido em HTML,CSS e JavaScript de um mini game.</p>
-                    <hr>
+                <div class="projetoWeb">
+                    <h3>Primeira Crypto Ethereum</h3>
+                  <div class="social-icons">
+                      <a href="https://github.com/6uilhermeTeixeira/PrimeiraCryptoEthereum" target="_blank" class="social-icon" aria-label="GitHub">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </div>
+                  <p>Criação de Rede de Testes com Ganache para realizar com a IDE Remix o Deploy do Contrato Inteligente programado em Solidity.</p>
+                  <hr>
                 </div>
-                <div class="w3-container">
-                  <h6 class="w3-text-teal">
-                    <i class="fa fa-github fa-fw w3-margin-right"></i>
-                    <a href="https://github.com/6uilhermeTeixeira/InstagramLogin" target="_blank">Instagram LOGIN</a>
-                  </h6>
+                <div class="projetoWeb">
+                    <h3>Jump Mario</h3>
+                  <div class="social-icons">
+                      <a href="https://github.com/6uilhermeTeixeira/JumpMario" target="_blank" class="social-icon" aria-label="GitHub">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </div>
+                  <p>Este é um simples projeto de jogo de saltar por obstáculos desenvolvido com a linguagem Java Script.</p>
+                  <hr>
+                </div>
+                <div class="projetoWeb">
+                    <h3>Instagram LOGIN</h3>
+                  <div class="social-icons">
+                      <a href="https://github.com/6uilhermeTeixeira/InstagramLogin" target="_blank" class="social-icon" aria-label="GitHub">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </div>
                   <p>Código Desenvolvido em HTML e CSS de um clone da página inicial do Instagram.</p>
                   <hr>
                 </div>
-                <div class="w3-container">
-                    <h6 class="w3-text-teal">
-                      <i class="fa fa-github fa-fw w3-margin-right"></i>
-                      <a href="https://github.com/6uilhermeTeixeira/ETHTestToken" target="_blank">ETH Test Token</a>
-                    </h6>
-                    <p>Código em Solidity para criação de Token Padrão em rede de tests da Ethereum...</p>
-                    <hr>
+                <div class="projetoWeb">
+                    <h3>ETH Test Token</h3>
+                  <div class="social-icons">
+                      <a href="https://github.com/6uilhermeTeixeira/ETHTestToken" target="_blank" class="social-icon" aria-label="GitHub">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </div>
+                  <p>Código em Solidity para criação de Token Padrão em rede de tests da Ethereum...</p>
+                  <hr>
                 </div>
-                <div class="w3-container">
-                    <h6 class="w3-text-teal">
-                      <i class="fa fa-github fa-fw w3-margin-right"></i>
-                      <a href="https://github.com/6uilhermeTeixeira/PolygonNFT" target="_blank">Polygon NFT</a>
-                    </h6>
-                    <p>Entrega do Desafio Criando um NFT na Prática.</p>
-                    <hr>
+                <div class="projetoWeb">
+                    <h3>Polygon NFT</h3>
+                  <div class="social-icons">
+                      <a href="https://github.com/6uilhermeTeixeira/PolygonNFT" target="_blank" class="social-icon" aria-label="GitHub">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </div>
+                  <p>Entrega do Desafio Criando um NFT na Prática.</p>
+                  <hr>
                 </div>
             </div>
         </section>
