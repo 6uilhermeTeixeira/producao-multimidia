@@ -19,56 +19,56 @@ let track_list1 = [
     {
       name: "Aleluia",
       artist: "L Lima",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Aleluia - L Lima.wav"
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Aleluia - L Lima.wav"
     },
     {
       name: "Dia Tranquilo",
       artist: "Viih Rodrigues",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Dia Tranquilo - Viih Rodrigues.wav"
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Dia Tranquilo - Viih Rodrigues.wav"
     },
     {
       name: "Entre Becos e Vielas",
       artist: "Viih Rodrigues",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Entre Becos e Vielas - Viih Rodrigues.wav",
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Entre Becos e Vielas - Viih Rodrigues.wav",
     },
     {
       name: "Fica",
       artist: "Keren, Guh, Jade Chris",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Fica - Keren, Guh, Jade Chris.wav",
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Fica - Keren, Guh, Jade Chris.wav",
     },
     {
       name: "Gang do Assalto",
       artist: "Dioin FG",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Gang do Assalto - Dioin FG.wav",
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Gang do Assalto - Dioin FG.wav",
     },
     {
       name: "Não se Justifica",
       artist: "Jeff",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Não se Justifica - Jeff.wav",
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Não se Justifica - Jeff.wav",
     },
     {
       name: "Nua",
       artist: "Keren Chris Feat Fael Andrade",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Nua - Keren Chris Feat Fael Andrade.wav",
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Nua - Keren Chris Feat Fael Andrade.wav",
     },
     {
       name: "Omlad",
       artist: "La Cintura",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Omlad - La Cintura.wav",
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Omlad - La Cintura.wav",
     },
     {
       name: "Rebola pra mim",
       artist: "Gringa Cara Feat Keren Chris",
-      image: "../imgs/cover1.png",
-      path: "../musicas/guias/Rebola pra mim - Gringa Cara Feat Keren Chris.wav",
+      image: "imgs/cover1.png",
+      path: "musicas/guias/Rebola pra mim - Gringa Cara Feat Keren Chris.wav",
     },
   ];
   
@@ -77,104 +77,104 @@ let track_list1 = [
     {
       name: "Chicano - Latin Trap Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Chicano - Latin Trap Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Chicano - Latin Trap Beat.wav"
     },
     {
       name: "Double Blunt - Plug Trap Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Double Blunt - Plug Trap Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Double Blunt - Plug Trap Beat.wav"
     },
     {
       name: "Criminal - Trap Funk Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Criminal - Trap Funk Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Criminal - Trap Funk Beat.wav"
     },
     {
       name: "Playboy - Vibes Trap Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Playboy - Vibes Trap Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Playboy - Vibes Trap Beat.wav"
     },
     {
       name: "9 mm - Hard Trap Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/9 mm - Hard Trap Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/9 mm - Hard Trap Beat.wav"
     },
     {
       name: "Chefe - Funk Consciente Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Chefe - Funk Consciente Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Chefe - Funk Consciente Beat.wav"
     },
     {
       name: "Di Quebra - Funk Consciente Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Di Quebra - Funk Consciente Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Di Quebra - Funk Consciente Beat.wav"
     },
     {
       name: "Momentos - Funk Consciente Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Momentos - Funk Consciente Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Momentos - Funk Consciente Beat.wav"
     },
     {
       name: "Double G - G Funk Boom Bap Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Double G - G Funk Boom Bap Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Double G - G Funk Boom Bap Beat.wav"
     },
     {
       name: "Goofy - Underground Boom Bap Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Goofy - Underground Boom Bap Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Goofy - Underground Boom Bap Beat.wav"
     },
     {
       name: "Smoke - Jazz Boom Bap Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Smoke - Jazz Boom Bap Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Smoke - Jazz Boom Bap Beat.wav"
     },
     {
       name: "California - Jersey Club Grimme Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/California - Jersey Club Grimme Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/California - Jersey Club Grimme Beat.wav"
     },
     {
       name: "Legacy - Drill Grimme Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Legacy - Drill Grimme Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Legacy - Drill Grimme Beat.wav"
     },
     {
       name: "Arriba - Afrobeat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Arriba - Afrobeat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Arriba - Afrobeat.wav"
     },
     {
       name: "Mamacita - Raggaeton Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Mamacita - Raggaeton Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Mamacita - Raggaeton Beat.wav"
     },
     {
       name: "Morning Sun -  RnB Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Morning Sun -  RnB Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Morning Sun -  RnB Beat.wav"
     },
     {
       name: "Pecado - RnB Beat",
       artist: "Prod. G3X",
-      image: "../imgs/cover2.png",
-      path: "../musicas/beats/Pecado - RnB Beat.wav"
+      image: "imgs/cover2.png",
+      path: "musicas/beats/Pecado - RnB Beat.wav"
     },
   ];
   
