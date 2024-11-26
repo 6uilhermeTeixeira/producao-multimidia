@@ -18,55 +18,55 @@ menuLinks.forEach(link => {
 let track_list1 = [
     {
       name: "Aleluia",
-      artist: "L Lima",
+      artist: "L Lima, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Aleluia - L Lima.wav"
     },
     {
       name: "Dia Tranquilo",
-      artist: "Viih Rodrigues",
+      artist: "Viih Rodrigues, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Dia Tranquilo - Viih Rodrigues.wav"
     },
     {
       name: "Entre Becos e Vielas",
-      artist: "Viih Rodrigues",
+      artist: "Viih Rodrigues, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Entre Becos e Vielas - Viih Rodrigues.wav",
     },
     {
       name: "Fica",
-      artist: "Keren, Guh, Jade Chris",
+      artist: "Keren, Guh, Jade Chris, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Fica - Keren, Guh, Jade Chris.wav",
     },
     {
       name: "Gang do Assalto",
-      artist: "Dioin FG",
+      artist: "Dioin FG, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Gang do Assalto - Dioin FG.wav",
     },
     {
       name: "Não se Justifica",
-      artist: "Jeff",
+      artist: "Jeffy G, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Não se Justifica - Jeff.wav",
     },
     {
       name: "Nua",
-      artist: "Keren Chris Feat Fael Andrade",
+      artist: "Keren Chris Feat Fael Andrade, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Nua - Keren Chris Feat Fael Andrade.wav",
     },
     {
-      name: "Omlad",
-      artist: "La Cintura",
+      name: "La Cintura",
+      artist: "Omlad, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Omlad - La Cintura.wav",
     },
     {
       name: "Rebola pra mim",
-      artist: "Gringa Cara Feat Keren Chris",
+      artist: "Gringa Cara Feat Keren Chris, Prod. G3X",
       image: "imgs/cover1.png",
       path: "musicas/guias/Rebola pra mim - Gringa Cara Feat Keren Chris.wav",
     },
