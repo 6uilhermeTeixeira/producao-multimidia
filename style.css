@@ -120,8 +120,22 @@ footer {
     margin-top: 2%;
 }
 
+#video .videos {
+    background-color: rgba(40, 40, 40, 0.8);
+    padding: 2% 2% 2% 2%;
+    margin-bottom: 2%;
+}
+
 #video h1 {
     margin: 3%;
+}
+
+#video h2 {
+    margin: 5% 0% 3% 0%;
+}
+
+#video h4 {
+    margin: 0% 0% 2% 0%;
 }
 
 #web .projetoWeb {
@@ -195,8 +209,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px; /* Adiciona espaço interno */
-    margin: 20px; /* Adiciona margem entre os players */
+    padding: 20px;
+    margin: 20px;
     border-radius: 10px; /* Arredonda os cantos do player */
     background-color: rgba(40, 40, 40, 0.8); /* Fundo semi-transparente */
 }
@@ -211,8 +225,8 @@ footer {
   
 .track-art {
     margin: 25px;
-    height: 200px; /* Ajusta a altura para melhor responsividade */
-    width: 200px; /* Ajusta a largura para melhor responsividade */
+    height: 200px;
+    width: 200px;
     background-size: cover;
     border-radius: 10%;
 }
@@ -238,7 +252,7 @@ footer {
 }
   
 .playpause-track, .prev-track, .next-track {
-    padding: 15px; /* Reduz o padding para melhor ajuste em telas menores */
+    padding: 15px;
     opacity: 0.8;
     transition: opacity .2s;
 }
@@ -256,7 +270,7 @@ footer {
     margin: 10px 0; /* Adiciona margem vertical */
 }
   
-/* Modify the appearance of the slider */
+/* Modificar a aparência do controle deslizante */
 .seek_slider, .volume_slider {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -268,7 +282,7 @@ footer {
     transition: opacity .2s;
 }
   
-/* Modify the appearance of the slider thumb */
+/* Modificar a aparência do controle deslizante */
 .seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -326,6 +340,25 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 }
 /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
 
+/* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Cor do WhatsApp */
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px; /* Tamanho do ícone */
+    height: 60px;
+}
+/* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp */
+
 /* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
 @media (max-width: 1200px) {
     #apresentacao img {
@@ -338,6 +371,10 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 
     #apresentacao p {
         font-size: 120%; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    #video iframe {
+        width: 100%;
     }
 
     .carousel-inner {
@@ -363,6 +400,10 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         font-size: 250%; /* Reduz ainda mais o tamanho da fonte do título */
     }
 
+    #video iframe {
+        width: 100%;
+    }
+
     .carousel-inner {
         min-height: 200px; /* Ajuste a altura mínima para dispositivos móveis */
     }
@@ -377,6 +418,10 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
     nav ul {
         flex-direction: column; /* Muda a direção do menu para coluna */
         align-items: center
+    }
+
+    #video iframe {
+        width: 100%;
     }
 
     .player {
@@ -395,6 +440,11 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 }
 
 @media (max-width: 480px) {
+
+    #video iframe {
+        width: 100%;
+    }
+
     .track-name {
         font-size: 2rem; /* Reduz o tamanho do nome da faixa */
     }
