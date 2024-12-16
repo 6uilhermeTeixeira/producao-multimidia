@@ -69,11 +69,11 @@ footer {
     width: 100%;
 }
 
-#apresentacao {
-    margin-top: -6%;
+#apresentacao, #musica, #design, #video, #web #contato {
+    margin-top: -2%;
 }
 
-#apresentacao img {
+#apresentacao #prod {
     margin-top: 5%;
     border-radius: 50%;
     border: 2px solid #ddd;
@@ -86,6 +86,22 @@ footer {
     font-size: 400%;
 }
 
+#apresentacao h2 {
+    margin: 1% 0% 3% 0%;
+    font-size: 320%;
+}
+
+#apresentacao h3 {
+    margin: 1% 0% 3% 0%;
+    font-size: 240%;
+}
+
+#apresentacao h4 {
+    margin-top: -5%;
+    margin-bottom: 5%;
+    font-size: 160%;
+}
+
 #apresentacao p {
     font-size: 150%;
 }
@@ -93,14 +109,42 @@ footer {
 #apresentacao #redes {
     background-color: rgba(40, 40, 40, 0.8);
     margin-top: 5%;
+    border-radius: 10px;
+}
+
+#apresentacao .menu-section {
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
+}
+
+#apresentacao #tecnologias {
+    background-color: rgba(40, 40, 40, 0.8);
+    border-radius: 10px;
 }
 
 #musica h1 {
-    margin-top: 3%;
+    margin: 3%;
+    font-size: 400%;
+}
+
+#musica h2 {
+    margin: 3% 0% 3% 0%;
+    font-size: 320%;
+}
+
+#musica h3 {
+    margin: 5% 0% 3% 0%;
+    font-size: 240%;
+}
+
+#musica h4 {
+    margin: 3% 0% 3% 0%;
+    font-size: 160%;
 }
 
 #musica p {
     Margin: 0px 0px 30px 0px;
+    font-size: 150%;
 }
 
 #design .imagens {
@@ -111,14 +155,26 @@ footer {
 
 #design h1 {
     margin: 3%;
+    font-size: 400%;
 }
 
 #design h2 {
-    margin: 5% 0% 3% 0%;
+    margin: 3% 0% 3% 0%;
+    font-size: 320%;
 }
 
 #design h3 {
+    margin: 3%;
+    font-size: 240%;
+}
+
+#design h4 {
     margin-top: 2%;
+    font-size: 160%;
+}
+
+#design p {
+    font-size: 150%;
 }
 
 #video .videos {
@@ -132,7 +188,7 @@ footer {
 }
 
 #video h2 {
-    margin: 5% 0% 3% 0%;
+    margin: 3% 0% 3% 0%;
 }
 
 #video h4 {
@@ -166,6 +222,79 @@ footer {
     font-size: 200%;
     color: green;
 }
+
+/* Menu da pagina de apresentação *//* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+.menu-section {
+    text-align: center; /* Centraliza os elementos dentro da seção */
+}
+
+.menu-section h2 {
+    margin: 0% 0% 3% 0%;
+}
+
+.menu {
+    display: flex; /* Transforma a lista em um flex container */
+    justify-content: center; /* Centraliza os itens dentro do container flex */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+}
+
+.menu li {
+    margin: 0 10px; /* Adiciona margem entre os itens */
+}
+
+.menu a {
+    display: flex; /* Para centralizar o conteúdo dentro do link */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    width: 150px; /* Largura fixa para todos os botões */
+    height: 70px; /* Altura fixa para todos os botões */
+    padding: 0; /* Remove o padding para manter a altura consistente */
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #fff;
+    color: #333;
+}
+/* Menu da pagina de apresentação *//* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+/* Menu de Tecnologia da Pagina de Apresentação *//* Menu de Tecnologia da Pagina de Apresentação *//* Menu de Tecnologia da Pagina de Apresentação */
+#tecnologias .social-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+#tecnologias .social-icon {
+    margin: 0 15px; /* Espaçamento entre os ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex; /* Para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    width: 100px; /* Largura fixa para todos os ícones */
+    height: 100px; /* Altura fixa para todos os ícones */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+#tecnologias .social-icon:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+}
+
+#tecnologias .tech-icon {
+    width: 80px; /* Largura fixa para as imagens */
+    height: 80px; /* Altura fixa para as imagens */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+/* Menu de Tecnologia da Pagina de Apresentação *//* Menu de Tecnologia da Pagina de Apresentação *//* Menu de Tecnologia da Pagina de Apresentação */
 
 /* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
 .social-icons {
@@ -202,6 +331,59 @@ footer {
     transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
 }
 /* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
+
+/* Configurações do Carousel de PDFs *//* Configurações do Carousel de PDFs *//* Configurações do Carousel de PDFs */
+.carousel {
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+iframe {
+    /*padding: 0% 15% 0% 15%;*/
+    width: 600px; /* Largura do PDF */
+    height: 600px; /* Altura do PDF */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.carousel-indicators {
+    margin-top: 10px;
+}
+
+.indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+/* Configurações do Carousel de PDFs *//* Configurações do Carousel de PDFs *//* Configurações do Carousel de PDFs */
 
 /* Configurações dos Music Players *//* Configurações dos Music Players *//* Configurações dos Music Players */
 .player {
@@ -362,6 +544,11 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 
 /* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
 @media (max-width: 1200px) {
+
+    #apresentacao, #musica, #design, #video, #web #contato {
+        margin-top: -3%;
+    }
+
     #apresentacao img {
         width: 50%; /* Aumenta a largura da imagem em telas menores */
     }
@@ -382,6 +569,28 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         width: 100%;
     }
 
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+    .menu {
+        flex-direction: row; /* Mantém o layout em linha */
+    }
+
+    .menu a {
+        width: 150px; /* Largura fixa para todos os botões */
+        height: 70px;
+    }
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+    #tecnologias .social-icon {
+        width: 50px; /* Largura fixa para todos os ícones */
+        height: 50px; /* Altura fixa para todos os ícones */
+    }
+    
+    #tecnologias .tech-icon {
+        width: 40px; /* Largura fixa para as imagens */
+        height: 40px; /* Altura fixa para as imagens */
+    }
+
+    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
     .carousel-inner {
         min-height: 250px; /* Ajuste a altura mínima para dispositivos móveis */
     }
@@ -390,11 +599,16 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         padding: 0; /* Remove padding em telas menores */
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
+    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
 }
 
 @media (max-width: 992px) {
     nav ul li {
         margin-right: 15px; /* Reduz o espaço entre os itens do menu */
+    }
+
+    #apresentacao, #musica, #design, #video, #web #contato {
+        margin-top: -5%;
     }
 
     #apresentacao img {
@@ -413,6 +627,29 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         width: 100%;
     }
 
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+    .menu {
+        flex-direction: row; /* Mantém o layout em linha */
+        flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    }
+    
+    .menu a {
+        width: 150px; /* Largura fixa para todos os botões */
+        height: 60px;
+    }
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+    #tecnologias .social-icon {
+        width: 45px; /* Largura fixa para todos os ícones */
+        height: 45px; /* Altura fixa para todos os ícones */
+    }
+    
+    #tecnologias .tech-icon {
+        width: 36px; /* Largura fixa para as imagens */
+        height: 36px; /* Altura fixa para as imagens */
+    }
+
+    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
     .carousel-inner {
         min-height: 200px; /* Ajuste a altura mínima para dispositivos móveis */
     }
@@ -421,6 +658,7 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         padding: 0; /* Remove padding em telas menores */
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
+    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
 }
 
 @media (max-width: 768px) {
@@ -429,6 +667,10 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         align-items: center
     }
 
+    #apresentacao, #musica, #design, #video, #web #contato {
+        margin-top: -6%;
+    }
+
     #video iframe {
         width: 100%;
     }
@@ -437,11 +679,42 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         width: 100%;
     }
 
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+    .menu {
+        flex-direction: column; /* Muda o layout para coluna */
+        align-content: center;
+    }
+
+    .menu li {
+        margin: 5px 0; /* Ajusta a margem entre os itens */
+    }
+
+    .menu a {
+        padding: 10px; /* Ajusta o padding para telas menores */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+        width: 150px; /* Largura fixa para todos os botões */
+        height: 55px;
+    }
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+    #tecnologias .social-icon {
+        width: 40px; /* Largura fixa para todos os ícones */
+        height: 40px; /* Altura fixa para todos os ícones */
+    }
+    
+    #tecnologias .tech-icon {
+        width: 32px; /* Largura fixa para as imagens */
+        height: 32px; /* Altura fixa para as imagens */
+    }
+
+    /* Configurações dos Music Players *//* Configurações dos Music Players */
     .player {
         width: 90%; /* O player ocupa 90% da largura da tela em dispositivos menores */
         margin: 10px auto; /* Centraliza o player */
     }
+    /* Configurações dos Music Players *//* Configurações dos Music Players */
 
+    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
     .carousel-inner {
         min-height: 150px; /* Ajuste a altura mínima para dispositivos móveis */
     }
@@ -450,9 +723,14 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         padding: 0; /* Remove padding em telas menores */
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
+    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
 }
 
 @media (max-width: 480px) {
+
+    #apresentacao, #musica, #design, #video, #web #contato {
+        margin-top: -6%;
+    }
 
     #video iframe {
         width: 100%;
@@ -462,6 +740,26 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         width: 100%;
     }
 
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+    .menu a {
+        padding: 8px; /* Ajusta o padding para telas muito pequenas */
+        font-size: 12px; /* Ajusta o tamanho da fonte */
+        width: 150px; /* Largura fixa para todos os botões */
+        height: 50px;
+    }
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+    #tecnologias .social-icon {
+        width: 30px; /* Largura fixa para todos os ícones */
+        height: 30px; /* Altura fixa para todos os ícones */
+    }
+    
+    #tecnologias .tech-icon {
+        width: 24px; /* Largura fixa para as imagens */
+        height: 24px; /* Altura fixa para as imagens */
+    }
+
+    /* Configurações dos Music Players *//* Configurações dos Music Players */
     .track-name {
         font-size: 2rem; /* Reduz o tamanho do nome da faixa */
     }
@@ -469,7 +767,9 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
     .track-artist {
         font-size: 1.2rem; /* Reduz o tamanho do artista */
     }
+    /* Configurações dos Music Players *//* Configurações dos Music Players */
 
+    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
     .carousel-inner {
         min-height: 120px; /* Ajuste a altura mínima para dispositivos móveis */
     }
@@ -478,5 +778,52 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
         padding: 0; /* Remove padding em telas menores */
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
+    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
 }
 /* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-menu {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-menu h3 {
+    margin-bottom: 10px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    margin: 5px 0;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}

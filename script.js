@@ -261,10 +261,14 @@ let track_list1 = [
       let seekto = curr_track.duration * (seek_slider.value / 100);
       curr_track.currentTime = seekto;
     }
-  
+
+    seek_slider.addEventListener('input', seekTo);
+
     function setVolume() {
       curr_track.volume = volume_slider.value / 100;
     }
+    
+    volume_slider.addEventListener('input', setVolume);
   
     function seekUpdate() {
       let seekPosition = 0;
