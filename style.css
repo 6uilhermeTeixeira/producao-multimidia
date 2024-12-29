@@ -113,6 +113,7 @@ section {
     border-radius: 10px;
 }
 
+/* Configurações do rodapé *//* Configurações do rodapé *//* Configurações do rodapé */
 footer {
     background-color: #333;
     color: #fff;
@@ -124,11 +125,13 @@ footer {
     justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2%;
 }
 
 .footer-menu {
     flex: 1;
-    margin: 0 20px;
+    margin: 0 10px;
+    padding: 2%;
 }
 
 .footer-menu h3 {
@@ -159,6 +162,7 @@ footer {
     margin-bottom: -20px;
     font-size: 20px;
 }
+/* Configurações do rodapé *//* Configurações do rodapé *//* Configurações do rodapé */
 
 /* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
 .social-icons {
@@ -329,6 +333,10 @@ footer {
         height: 40px; /* Altura fixa para as imagens */
     }
     /* Menu de Tecnologias *//* Menu de Tecnologias */
+
+    .footer-container {
+        flex-direction: row; /* Mantém o layout em linha */
+    }
 }
 
 @media (max-width: 992px) {
@@ -371,6 +379,10 @@ footer {
         height: 36px; /* Altura fixa para as imagens */
     }
     /* Menu de Tecnologias *//* Menu de Tecnologias */
+
+    .footer-container {
+        flex-direction: row; /* Mantém o layout em linha */
+    }
 }
 
 @media (max-width: 768px) {
@@ -419,6 +431,10 @@ footer {
         margin: 10px auto; /* Centraliza o player */
     }
     /* Configurações dos Music Players *//* Configurações dos Music Players */
+
+    .footer-menu {
+        margin: 10px 0; /* Ajusta a margem entre os menus */
+    }
 }
 
 @media (max-width: 480px) {
@@ -447,5 +463,18 @@ footer {
         height: 24px; /* Altura fixa para as imagens */
     }
     /* Menu de Tecnologias *//* Menu de Tecnologias */
+
+    .footer-bottom {
+        font-size: 10px; /* Ajusta o tamanho da fonte */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Muda o layout para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .footer-menu {
+        text-align: center;
+    }
 }
 /* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
