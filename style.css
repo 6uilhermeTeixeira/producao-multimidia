@@ -1,5 +1,5 @@
 body {
-    background-image: url('/imgs/background.gif');
+    background-image: url('/background.gif');
     background-size: 140%;
     background-position: center;
     background-attachment: fixed;
@@ -59,17 +59,7 @@ section {
     color: white;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: rgba(60, 60, 60, 0.90);
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-#apresentacao, #musica, #design, #video, #web #contato {
+#apresentacao {
     margin-top: -2%;
 }
 
@@ -83,27 +73,28 @@ footer {
 
 #apresentacao h1 {
     margin: 5%;
-    font-size: 400%;
+    font-size: 240%;
 }
 
 #apresentacao h2 {
-    margin: 1% 0% 3% 0%;
-    font-size: 320%;
+    margin: 3% 0% 3% 0%;
+    font-size: 210%;
 }
 
 #apresentacao h3 {
-    margin: 1% 0% 3% 0%;
-    font-size: 240%;
+    margin: 3% 0% 3% 0%;
+    font-size: 180%;
 }
 
 #apresentacao h4 {
     margin-top: -5%;
     margin-bottom: 5%;
-    font-size: 160%;
+    font-size: 150%;
 }
 
 #apresentacao p {
-    font-size: 150%;
+    margin: 3% 3% 3% 3%;
+    font-size: 120%;
 }
 
 #apresentacao #redes {
@@ -121,666 +112,6 @@ footer {
     background-color: rgba(40, 40, 40, 0.8);
     border-radius: 10px;
 }
-
-#musica h1 {
-    margin: 3%;
-    font-size: 400%;
-}
-
-#musica h2 {
-    margin: 3% 0% 3% 0%;
-    font-size: 320%;
-}
-
-#musica h3 {
-    margin: 5% 0% 3% 0%;
-    font-size: 240%;
-}
-
-#musica h4 {
-    margin: 3% 0% 3% 0%;
-    font-size: 160%;
-}
-
-#musica p {
-    Margin: 0px 0px 30px 0px;
-    font-size: 150%;
-}
-
-#design .imagens {
-    background-color: rgba(40, 40, 40, 0.8);
-    padding: 2% 2% 2% 2%;
-    margin-bottom: 2%;
-}
-
-#design h1 {
-    margin: 3%;
-    font-size: 400%;
-}
-
-#design h2 {
-    margin: 3% 0% 3% 0%;
-    font-size: 320%;
-}
-
-#design h3 {
-    margin: 3%;
-    font-size: 240%;
-}
-
-#design h4 {
-    margin-top: 2%;
-    font-size: 160%;
-}
-
-#design p {
-    font-size: 150%;
-}
-
-#video .videos {
-    background-color: rgba(40, 40, 40, 0.8);
-    padding: 2% 2% 2% 2%;
-    margin-bottom: 2%;
-}
-
-#video h1 {
-    margin: 3%;
-}
-
-#video h2 {
-    margin: 3% 0% 3% 0%;
-}
-
-#video h4 {
-    margin: 0% 0% 2% 0%;
-}
-
-#web .projetoWeb {
-    background-color: rgba(40, 40, 40, 0.8);
-    padding: 2%;
-    margin-bottom: 2%;
-}
-
-#web p {
-    margin: 3% 0% 3% 0%;
-}
-
-#web h1 {
-    margin: 3%;
-}
-
-#web h2 {
-    margin: 2% 0% 3% 0%;
-}
-
-#web a {
-    font-size: 160%;
-    color: green;
-}
-
-#contato a {
-    font-size: 200%;
-    color: green;
-}
-
-/* Menu da pagina de apresentação *//* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-.menu-section {
-    text-align: center; /* Centraliza os elementos dentro da seção */
-}
-
-.menu-section h2 {
-    margin: 0% 0% 3% 0%;
-}
-
-.menu {
-    display: flex; /* Transforma a lista em um flex container */
-    justify-content: center; /* Centraliza os itens dentro do container flex */
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0;
-    margin: 0;
-    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
-}
-
-.menu li {
-    margin: 0 10px; /* Adiciona margem entre os itens */
-}
-
-.menu a {
-    display: flex; /* Para centralizar o conteúdo dentro do link */
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center; /* Alinha horizontalmente */
-    width: 150px; /* Largura fixa para todos os botões */
-    height: 70px; /* Altura fixa para todos os botões */
-    padding: 0; /* Remove o padding para manter a altura consistente */
-    background-color: #333;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.menu a:hover {
-    background-color: #fff;
-    color: #333;
-}
-/* Menu da pagina de apresentação *//* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-
-/* Menu de Tecnologia da Pagina de Apresentação *//* Menu de Tecnologia da Pagina de Apresentação *//* Menu de Tecnologia da Pagina de Apresentação */
-#tecnologias .social-icons {
-    display: flex;
-    justify-content: center; /* Centraliza os ícones */
-    margin-top: 20px; /* Espaçamento acima */
-}
-
-#tecnologias .social-icon {
-    margin: 0 15px; /* Espaçamento entre os ícones */
-    text-decoration: none; /* Remove o sublinhado */
-    display: flex; /* Para centralizar o conteúdo */
-    align-items: center; /* Alinha verticalmente */
-    justify-content: center; /* Alinha horizontalmente */
-    width: 100px; /* Largura fixa para todos os ícones */
-    height: 100px; /* Altura fixa para todos os ícones */
-    border-radius: 10px; /* Bordas arredondadas (opcional) */
-    transition: transform 0.3s; /* Transição suave para o efeito de hover */
-}
-
-#tecnologias .social-icon:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
-}
-
-#tecnologias .tech-icon {
-    width: 80px; /* Largura fixa para as imagens */
-    height: 80px; /* Altura fixa para as imagens */
-    object-fit: contain; /* Mantém a proporção da imagem */
-}
-/* Menu de Tecnologia da Pagina de Apresentação *//* Menu de Tecnologia da Pagina de Apresentação *//* Menu de Tecnologia da Pagina de Apresentação */
-
-/* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icon {
-    font-size: 40px; /* Tamanho do ícone */
-    color: white; /* Cor dos ícones */
-    margin: 0 15px; /* Espaçamento entre os ícones */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: transform 0.3s; /* Transição suave */
-}
-
-.social-icon:hover {
-    color: aqua;
-    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
-}
-
-#web .w3-container .social-icons {
-    margin-top: 20px;
-}
-
-#web .w3-container .social-icon {
-    font-size: 40px; /* Tamanho do ícone */
-    color: white; /* Cor dos ícones */
-    margin: 0 15px; /* Espaçamento entre os ícones */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: transform 0.3s; /* Transição suave */
-}
-
-#web .w3-container .social-icon:hover {
-    color: aqua;
-    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
-}
-/* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
-
-/* Configurações do Carousel de PDFs *//* Configurações do Carousel de PDFs *//* Configurações do Carousel de PDFs */
-.carousel {
-    text-align: center;
-}
-
-.carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-iframe {
-    /*padding: 0% 15% 0% 15%;*/
-    width: 600px; /* Largura do PDF */
-    height: 600px; /* Altura do PDF */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 0 10px;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-.carousel-indicators {
-    margin-top: 10px;
-}
-
-.indicator {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.indicator.active {
-    background-color: #333;
-}
-/* Configurações do Carousel de PDFs *//* Configurações do Carousel de PDFs *//* Configurações do Carousel de PDFs */
-
-/* Configurações dos Music Players *//* Configurações dos Music Players *//* Configurações dos Music Players */
-.player {
-    height: auto; /* Permite que a altura se ajuste ao conteúdo */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px; /* Arredonda os cantos do player */
-    background-color: rgba(40, 40, 40, 0.8); /* Fundo semi-transparente */
-}
-  
-.details {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 25px;
-}
-  
-.track-art {
-    margin: 25px;
-    height: 200px;
-    width: 200px;
-    background-size: cover;
-    border-radius: 10%;
-}
-  
-.now-playing {
-    font-size: 1rem;
-}
-  
-.track-name {
-    font-size: 3rem;
-}
-  
-.track-artist {
-    font-size: 1.5rem;
-}
-  
-.buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; /* Centraliza os botões */
-    flex-wrap: wrap; /* Permite que os botões se movam para a linha seguinte em telas menores */
-}
-  
-.playpause-track, .prev-track, .next-track {
-    padding: 15px;
-    opacity: 0.8;
-    transition: opacity .2s;
-}
-  
-.playpause-track:hover, .prev-track:hover, .next-track:hover {
-    opacity: 1.0;
-}
-  
-.slider_container {
-    width: 100%; /* Permite que o slider ocupe toda a largura disponível */
-    max-width: 400px; /* Limita a largura máxima */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0; /* Adiciona margem vertical */
-}
-  
-/* Modificar a aparência do controle deslizante */
-.seek_slider, .volume_slider {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    height: 5px;
-    background: black;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-}
-  
-/* Modificar a aparência do controle deslizante */
-.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    cursor: pointer;
-    border-radius: 50%;
-}
-  
-.seek_slider:hover, .volume_slider:hover {
-    opacity: 1.0;
-}
-  
-.seek_slider {
-    width: 60%;
-}
-  
-.volume_slider {
-    width: 30%;
-}
-  
-.current-time, .total-duration {
-    padding: 10px;
-}
-  
-i.fa-volume-down, i.fa-volume-up {
-    padding: 10px;
-}
-  
-i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
-    cursor: pointer;
-}
-/* Configurações dos Music Players *//* Configurações dos Music Players *//* Configurações dos Music Players */
-
-/* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-.carousel-inner {
-    min-height: 300px; /* Ajuste a altura mínima para dispositivos móveis */
-    overflow: hidden; /* Garante que nada saia do contêiner */
-}
-
-.carousel-item img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
-    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
-    object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortar */
-    object-position: center; /* Centraliza a imagem dentro do contêiner */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: transparent; /* Remove o fundo */
-    border: none; /* Remove a borda */
-    filter: invert(1); /* Inverte a cor do ícone para branco (se necessário) */
-}
-/* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-
-/* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp */
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366; /* Cor do WhatsApp */
-    border-radius: 50%;
-    padding: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    z-index: 1000;
-}
-
-.whatsapp-button img {
-    width: 60px; /* Tamanho do ícone */
-    height: 60px;
-}
-/* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp */
-
-/* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
-@media (max-width: 1200px) {
-
-    #apresentacao, #musica, #design, #video, #web #contato {
-        margin-top: -3%;
-    }
-
-    #apresentacao img {
-        width: 50%; /* Aumenta a largura da imagem em telas menores */
-    }
-
-    #apresentacao h1 {
-        font-size: 300%; /* Reduz o tamanho da fonte do título */
-    }
-
-    #apresentacao p {
-        font-size: 120%; /* Reduz o tamanho da fonte do parágrafo */
-    }
-
-    #video iframe {
-        width: 100%;
-    }
-
-    #web iframe {
-        width: 100%;
-    }
-
-    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-    .menu {
-        flex-direction: row; /* Mantém o layout em linha */
-    }
-
-    .menu a {
-        width: 150px; /* Largura fixa para todos os botões */
-        height: 70px;
-    }
-    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-
-    #tecnologias .social-icon {
-        width: 50px; /* Largura fixa para todos os ícones */
-        height: 50px; /* Altura fixa para todos os ícones */
-    }
-    
-    #tecnologias .tech-icon {
-        width: 40px; /* Largura fixa para as imagens */
-        height: 40px; /* Altura fixa para as imagens */
-    }
-
-    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-    .carousel-inner {
-        min-height: 250px; /* Ajuste a altura mínima para dispositivos móveis */
-    }
-
-    .carousel-item img {
-        padding: 0; /* Remove padding em telas menores */
-        object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
-    }
-    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-}
-
-@media (max-width: 992px) {
-    nav ul li {
-        margin-right: 15px; /* Reduz o espaço entre os itens do menu */
-    }
-
-    #apresentacao, #musica, #design, #video, #web #contato {
-        margin-top: -5%;
-    }
-
-    #apresentacao img {
-        width: 70%; /* Aumenta a largura da imagem em telas menores */
-    }
-
-    #apresentacao h1 {
-        font-size: 250%; /* Reduz ainda mais o tamanho da fonte do título */
-    }
-
-    #video iframe {
-        width: 100%;
-    }
-
-    #web iframe {
-        width: 100%;
-    }
-
-    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-    .menu {
-        flex-direction: row; /* Mantém o layout em linha */
-        flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
-    }
-    
-    .menu a {
-        width: 150px; /* Largura fixa para todos os botões */
-        height: 60px;
-    }
-    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-
-    #tecnologias .social-icon {
-        width: 45px; /* Largura fixa para todos os ícones */
-        height: 45px; /* Altura fixa para todos os ícones */
-    }
-    
-    #tecnologias .tech-icon {
-        width: 36px; /* Largura fixa para as imagens */
-        height: 36px; /* Altura fixa para as imagens */
-    }
-
-    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-    .carousel-inner {
-        min-height: 200px; /* Ajuste a altura mínima para dispositivos móveis */
-    }
-
-    .carousel-item img {
-        padding: 0; /* Remove padding em telas menores */
-        object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
-    }
-    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; /* Muda a direção do menu para coluna */
-        align-items: center
-    }
-
-    #apresentacao, #musica, #design, #video, #web #contato {
-        margin-top: -6%;
-    }
-
-    #video iframe {
-        width: 100%;
-    }
-
-    #web iframe {
-        width: 100%;
-    }
-
-    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-    .menu {
-        flex-direction: column; /* Muda o layout para coluna */
-        align-content: center;
-    }
-
-    .menu li {
-        margin: 5px 0; /* Ajusta a margem entre os itens */
-    }
-
-    .menu a {
-        padding: 10px; /* Ajusta o padding para telas menores */
-        font-size: 14px; /* Ajusta o tamanho da fonte */
-        width: 150px; /* Largura fixa para todos os botões */
-        height: 55px;
-    }
-    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-
-    #tecnologias .social-icon {
-        width: 40px; /* Largura fixa para todos os ícones */
-        height: 40px; /* Altura fixa para todos os ícones */
-    }
-    
-    #tecnologias .tech-icon {
-        width: 32px; /* Largura fixa para as imagens */
-        height: 32px; /* Altura fixa para as imagens */
-    }
-
-    /* Configurações dos Music Players *//* Configurações dos Music Players */
-    .player {
-        width: 90%; /* O player ocupa 90% da largura da tela em dispositivos menores */
-        margin: 10px auto; /* Centraliza o player */
-    }
-    /* Configurações dos Music Players *//* Configurações dos Music Players */
-
-    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-    .carousel-inner {
-        min-height: 150px; /* Ajuste a altura mínima para dispositivos móveis */
-    }
-
-    .carousel-item img {
-        padding: 0; /* Remove padding em telas menores */
-        object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
-    }
-    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-}
-
-@media (max-width: 480px) {
-
-    #apresentacao, #musica, #design, #video, #web #contato {
-        margin-top: -6%;
-    }
-
-    #video iframe {
-        width: 100%;
-    }
-
-    #web iframe {
-        width: 100%;
-    }
-
-    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-    .menu a {
-        padding: 8px; /* Ajusta o padding para telas muito pequenas */
-        font-size: 12px; /* Ajusta o tamanho da fonte */
-        width: 150px; /* Largura fixa para todos os botões */
-        height: 50px;
-    }
-    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
-
-    #tecnologias .social-icon {
-        width: 30px; /* Largura fixa para todos os ícones */
-        height: 30px; /* Altura fixa para todos os ícones */
-    }
-    
-    #tecnologias .tech-icon {
-        width: 24px; /* Largura fixa para as imagens */
-        height: 24px; /* Altura fixa para as imagens */
-    }
-
-    /* Configurações dos Music Players *//* Configurações dos Music Players */
-    .track-name {
-        font-size: 2rem; /* Reduz o tamanho do nome da faixa */
-    }
-
-    .track-artist {
-        font-size: 1.2rem; /* Reduz o tamanho do artista */
-    }
-    /* Configurações dos Music Players *//* Configurações dos Music Players */
-
-    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-    .carousel-inner {
-        min-height: 120px; /* Ajuste a altura mínima para dispositivos móveis */
-    }
-
-    .carousel-item img {
-        padding: 0; /* Remove padding em telas menores */
-        object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
-    }
-    /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
-}
-/* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
 
 footer {
     background-color: #333;
@@ -825,5 +156,296 @@ footer {
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
-    font-size: 14px;
+    margin-bottom: -20px;
+    font-size: 20px;
 }
+
+/* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 40px; /* Tamanho do ícone */
+    color: white; /* Cor dos ícones */
+    margin: 0 15px; /* Espaçamento entre os ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+.social-icon:hover {
+    color: aqua;
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+}
+
+#web .w3-container .social-icons {
+    margin-top: 20px;
+}
+
+#web .w3-container .social-icon {
+    font-size: 40px; /* Tamanho do ícone */
+    color: white; /* Cor dos ícones */
+    margin: 0 15px; /* Espaçamento entre os ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+#web .w3-container .social-icon:hover {
+    color: aqua;
+    transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
+}
+/* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais *//* Configurações dos botões de midías sociais */
+
+/* Menu da pagina de apresentação *//* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+.menu-section {
+    text-align: center; /* Centraliza os elementos dentro da seção */
+}
+
+.menu-section h2 {
+    margin: 0% 0% 3% 0%;
+}
+
+.menu {
+    display: flex; /* Transforma a lista em um flex container */
+    justify-content: center; /* Centraliza os itens dentro do container flex */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+}
+
+.menu li {
+    margin: 0 10px; /* Adiciona margem entre os itens */
+}
+
+.menu a {
+    display: flex; /* Para centralizar o conteúdo dentro do link */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    width: 150px; /* Largura fixa para todos os botões */
+    height: 70px; /* Altura fixa para todos os botões */
+    padding: 0; /* Remove o padding para manter a altura consistente */
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #fff;
+    color: #333;
+}
+/* Menu da pagina de apresentação *//* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+/* Menu de Tecnologias *//* Menu de Tecnologias *//* Menu de Tecnologias */
+#tecnologias .social-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    margin-top: 20px; /* Espaçamento acima */
+}
+
+#tecnologias .social-icon {
+    margin: 0 15px; /* Espaçamento entre os ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    display: flex; /* Para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    width: 100px; /* Largura fixa para todos os ícones */
+    height: 100px; /* Altura fixa para todos os ícones */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    transition: transform 0.3s; /* Transição suave para o efeito de hover */
+}
+
+#tecnologias .social-icon:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+}
+
+#tecnologias .tech-icon {
+    width: 80px; /* Largura fixa para as imagens */
+    height: 80px; /* Altura fixa para as imagens */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+/* Menu de Tecnologias *//* Menu de Tecnologias *//* Menu de Tecnologias */
+
+/* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Cor do WhatsApp */
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px; /* Tamanho do ícone */
+    height: 60px;
+}
+/* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp *//* Configurações do Botão de WhatsApp */
+
+/* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
+@media (max-width: 1200px) {
+
+    #apresentacao {
+        margin-top: -3%;
+    }
+
+    #apresentacao img {
+        width: 50%; /* Aumenta a largura da imagem em telas menores */
+    }
+
+    #apresentacao h1 {
+        font-size: 300%; /* Reduz o tamanho da fonte do título */
+    }
+
+    #apresentacao p {
+        font-size: 120%; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+    .menu {
+        flex-direction: row; /* Mantém o layout em linha */
+    }
+
+    .menu a {
+        width: 150px; /* Largura fixa para todos os botões */
+        height: 70px;
+    }
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+    /* Menu de Tecnologias *//* Menu de Tecnologias */
+    #tecnologias .social-icon {
+        width: 50px; /* Largura fixa para todos os ícones */
+        height: 50px; /* Altura fixa para todos os ícones */
+    }
+    
+    #tecnologias .tech-icon {
+        width: 40px; /* Largura fixa para as imagens */
+        height: 40px; /* Altura fixa para as imagens */
+    }
+    /* Menu de Tecnologias *//* Menu de Tecnologias */
+}
+
+@media (max-width: 992px) {
+    nav ul li {
+        margin-right: 15px; /* Reduz o espaço entre os itens do menu */
+    }
+
+    #apresentacao {
+        margin-top: -5%;
+    }
+
+    #apresentacao img {
+        width: 70%; /* Aumenta a largura da imagem em telas menores */
+    }
+
+    #apresentacao h1 {
+        font-size: 250%; /* Reduz ainda mais o tamanho da fonte do título */
+    }
+
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+    .menu {
+        flex-direction: row; /* Mantém o layout em linha */
+        flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    }
+    
+    .menu a {
+        width: 150px; /* Largura fixa para todos os botões */
+        height: 60px;
+    }
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+    /* Menu de Tecnologias *//* Menu de Tecnologias */
+    #tecnologias .social-icon {
+        width: 45px; /* Largura fixa para todos os ícones */
+        height: 45px; /* Altura fixa para todos os ícones */
+    }
+    
+    #tecnologias .tech-icon {
+        width: 36px; /* Largura fixa para as imagens */
+        height: 36px; /* Altura fixa para as imagens */
+    }
+    /* Menu de Tecnologias *//* Menu de Tecnologias */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Muda a direção do menu para coluna */
+        align-items: center
+    }
+
+    #apresentacao {
+        margin-top: -6%;
+    }
+
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+    .menu {
+        flex-direction: column; /* Muda o layout para coluna */
+        align-content: center;
+    }
+
+    .menu li {
+        margin: 5px 0; /* Ajusta a margem entre os itens */
+    }
+
+    .menu a {
+        padding: 10px; /* Ajusta o padding para telas menores */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+        width: 150px; /* Largura fixa para todos os botões */
+        height: 55px;
+    }
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+    /* Menu de Tecnologias *//* Menu de Tecnologias */
+    #tecnologias .social-icon {
+        width: 40px; /* Largura fixa para todos os ícones */
+        height: 40px; /* Altura fixa para todos os ícones */
+    }
+    
+    #tecnologias .tech-icon {
+        width: 32px; /* Largura fixa para as imagens */
+        height: 32px; /* Altura fixa para as imagens */
+    }
+    /* Menu de Tecnologias *//* Menu de Tecnologias */
+
+    /* Configurações dos Music Players *//* Configurações dos Music Players */
+    .player {
+        width: 90%; /* O player ocupa 90% da largura da tela em dispositivos menores */
+        margin: 10px auto; /* Centraliza o player */
+    }
+    /* Configurações dos Music Players *//* Configurações dos Music Players */
+}
+
+@media (max-width: 480px) {
+
+    #apresentacao {
+        margin-top: -6%;
+    }
+
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+    .menu a {
+        padding: 8px; /* Ajusta o padding para telas muito pequenas */
+        font-size: 12px; /* Ajusta o tamanho da fonte */
+        width: 150px; /* Largura fixa para todos os botões */
+        height: 50px;
+    }
+    /* Menu da pagina de apresentação *//* Menu da pagina de apresentação */
+
+    /* Menu de Tecnologias *//* Menu de Tecnologias */
+    #tecnologias .social-icon {
+        width: 30px; /* Largura fixa para todos os ícones */
+        height: 30px; /* Altura fixa para todos os ícones */
+    }
+    
+    #tecnologias .tech-icon {
+        width: 24px; /* Largura fixa para as imagens */
+        height: 24px; /* Altura fixa para as imagens */
+    }
+    /* Menu de Tecnologias *//* Menu de Tecnologias */
+}
+/* Media Queries para Responsividade *//* Media Queries para Responsividade *//* Media Queries para Responsividade */
