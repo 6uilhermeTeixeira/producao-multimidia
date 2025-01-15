@@ -36,7 +36,7 @@ let track_list1 = [
     },
     {
       name: "Fica",
-      artist: "Keren, Guh, Jade Chris, Prod. G3X",
+      artist: "Keren Chris, Guh, Jade Chris, Prod. G3X",
       image: "/musicProduction/images/cover1.png",
       path: "/musicProduction/musics/guias/Fica - Keren, Guh, Jade Chris.wav",
     },
