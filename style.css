@@ -16,14 +16,13 @@ header {
     color: white;
     padding: 1rem;
     font-family: 'Averia Serif Libre', serif;
-    font-size: 140%;
+    font-size: 120%;
     z-index: 1000; /* Garante que o header fique acima de outros elementos */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    
 }
 
 nav ul li {
