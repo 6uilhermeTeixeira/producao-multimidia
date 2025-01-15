@@ -173,7 +173,7 @@ footer {
 }
 
 .social-icon:hover {
-    color: aqua;
+    color: #10B1B9;
     transform: scale(1.2); /* Aumenta o tamanho do ícone ao passar o mouse */
 }
 
@@ -223,7 +223,7 @@ footer {
     justify-content: center; /* Alinha horizontalmente */
     width: 150px; /* Largura fixa para todos os botões */
     height: 70px; /* Altura fixa para todos os botões */
-    padding: 0; /* Remove o padding para manter a altura consistente */
+    padding: 1%; /* Remove o padding para manter a altura consistente */
     background-color: #333;
     border: 1px solid #ddd;
     border-radius: 5px;
