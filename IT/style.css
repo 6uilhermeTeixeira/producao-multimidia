@@ -135,6 +135,7 @@ footer {
 }
 
 .footer-menu a:hover {
+    color: #10B1B9;
     text-decoration: underline;
 }
 

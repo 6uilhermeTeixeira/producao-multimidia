@@ -63,6 +63,10 @@ section button {
     color: white;
 }
 
+section button:hover {
+    background-color: rgba(60, 60, 60, 0.90);
+}
+
 #contato {
     background-color: rgba(60, 60, 60, 0.90);
     padding: 2%;
@@ -142,6 +146,7 @@ footer {
 }
 
 .footer-menu a:hover {
+    color: #10B1B9;
     text-decoration: underline;
 }
 
