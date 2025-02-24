@@ -86,6 +86,45 @@ section {
     font-size: 120%;
 }
 
+/* Sessão de Compra *//* Sessão de Compra *//* Sessão de Compra */
+.purchase-section {
+    text-align: center;
+    padding: 20px; /* Adicione padding à seção para melhor espaçamento interno */
+    background-color: rgba(40, 40, 40, 0.8);
+}
+  
+.purchase-section .btn {
+    width: 100%; /* Faz o botão ocupar a largura total do contêiner */
+    max-width: 300px; /* Define uma largura máxima para o botão */
+    margin: 10px auto; /* Centraliza o botão e adiciona margem superior e inferior */
+    padding: 15px 20px; /* Aumenta o padding para melhor espaçamento interno do botão */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total do botão */
+    font-size: 1.4em; /* Ajuste o tamanho da fonte conforme necessário */
+    line-height: 1; /* Melhora o espaçamento entre as linhas de texto */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    color: #ffffff;
+    background-color: #228B22;
+}
+  
+.purchase-section .btn span:first-child {
+    font-weight: bold; /* Deixa o título principal em negrito */
+    display: block; /* Garante que o título ocupe uma linha inteira */
+}
+  
+.purchase-section .btn span:last-child {
+    font-size: 0.8em; /* Ajusta o tamanho da fonte do subtítulo */
+    color: #ffffff; /* Define a cor do subtítulo */
+    display: block; /* Garante que o subtítulo ocupe uma linha inteira */
+}
+  
+  /* Opcional: Adiciona um efeito de hover ao botão */
+.purchase-section .btn:hover {
+    background-color: #32CD32; /* Muda a cor de fundo no hover */
+    cursor: pointer; /* Muda o cursor para pointer no hover */
+    color: #ffffff
+}
+/* Sessão de Compra *//* Sessão de Compra *//* Sessão de Compra */
+
 /* Configurações do rodapé *//* Configurações do rodapé *//* Configurações do rodapé */
 footer {
     background-color: rgba(60, 60, 60, 0.90);
