@@ -241,7 +241,7 @@ footer {
     right: 20px;
     background-color: #25D366; /* Cor do WhatsApp */
     border-radius: 50%;
-    margin: 0px 95px 0px 0px;
+    margin: 0px 0px 95px 0px;
     padding: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
     text-align: center;
@@ -283,6 +283,16 @@ footer {
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
     /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
+
+    .whatsapp-button img {
+        width: 60px; /* Tamanho do ícone */
+        height: 60px;
+        padding: 9px;
+    }
+
+    .footer-container {
+        flex-direction: row; /* Mantém o layout em linha */
+    }
 }
 
 @media (max-width: 992px) {
@@ -316,12 +326,23 @@ footer {
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
     /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
+
+    .footer-container {
+        flex-direction: row; /* Mantém o layout em linha */
+    }
 }
 
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column; /* Muda a direção do menu para coluna */
         align-items: center
+    }
+
+    iframe {
+        width: 560px;
+        height: 300px;
+        max-width: 100%;
+        border: none;
     }
 
     #web {
@@ -350,6 +371,20 @@ footer {
         object-fit: cover; /* Cobre o contêiner sem distorcer a imagem */
     }
     /* Configurações dos Corouseis de Imagens *//* Configurações dos Corouseis de Imagens */
+
+    .footer-bottom {
+        font-size: 10px; /* Ajusta o tamanho da fonte */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Muda o layout para coluna */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .footer-menu {
+        text-align: center;
+        margin: 10px 0; /* Ajusta a margem entre os menus */
+    }
 }
 
 @media (max-width: 480px) {
